@@ -41,7 +41,7 @@ KeenKeeper is a modern friendship management web application that helps users tr
 
 ## 🌐 Live Demo
 
-https://keep-keeper-a7-blond.vercel.app/
+ keenkeeper-a7.netlify.app
 
 ---
 
@@ -56,4 +56,4 @@ npm run dev
 
 ## 👨‍💻 Author
 
-Developed by [Nibir Shahriar]
+Developed by Nibir Shahriar
