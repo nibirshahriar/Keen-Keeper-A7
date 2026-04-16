@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router";
 import UseFriends from "../../components/Hook/UseFriends";
 import { HiOutlineBellSnooze } from "react-icons/hi2";
@@ -6,17 +6,22 @@ import { FiArchive } from "react-icons/fi";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { MdOutlineTextsms, MdWifiCalling3 } from "react-icons/md";
 import { IoMdVideocam } from "react-icons/io";
+import { HashLoader } from "react-spinners";
+import { FriendsContext } from "../../context/FriendsContext";
+import { toast } from "react-toastify";
 
 const FriendDetails = () => {
   const { id } = useParams();
   const { friends, loading } = UseFriends();
+
+  const { setExtFriends } = useContext(FriendsContext);
 
   const friend = friends.find((f) => String(f.id) === id);
 
   if (loading) {
     return (
       <div className="min-h-screen flex justify-center items-center">
-        Loading...
+        <HashLoader />
       </div>
     );
   }
@@ -29,6 +34,25 @@ const FriendDetails = () => {
     overdue: "bg-red-500 text-white",
     "on-track": "bg-green-700 text-white",
     "almost-due": "bg-yellow-500 text-white",
+  };
+
+  const handleAction = (type) => {
+    setExtFriends((prev) => [
+      ...prev,
+      {
+        friend,
+        action: type,
+        time: new Date(),
+      },
+    ]);
+
+    if (type === "Call") {
+      toast.success(`Call done with ${friend.name}`);
+    } else if (type === "Text") {
+      toast.info(`Text sent to ${friend.name}`);
+    } else if (type === "Video") {
+      toast.warn(`Video call with ${friend.name}`);
+    }
   };
 
   return (
@@ -138,17 +162,26 @@ const FriendDetails = () => {
             <h3 className="font-bold text-[#244D3F] mb-4">Quick Check-In</h3>
 
             <div className="grid grid-cols-3 gap-4">
-              <button className="rounded-xl py-6 bg-gray-50 hover:bg-gray-100 text-sm flex flex-col items-center">
+              <button
+                onClick={() => handleAction("Call")}
+                className="rounded-xl py-6 bg-gray-50 hover:bg-gray-100 text-sm flex flex-col items-center"
+              >
                 <MdWifiCalling3 className="text-xl" />
                 <p className="mt-2">Call</p>
               </button>
 
-              <button className="rounded-xl py-6 bg-gray-50 hover:bg-gray-100 text-sm flex flex-col items-center">
+              <button
+                onClick={() => handleAction("Text")}
+                className="rounded-xl py-6 bg-gray-50 hover:bg-gray-100 text-sm flex flex-col items-center"
+              >
                 <MdOutlineTextsms className="text-xl" />
                 <p className="mt-2">Text</p>
               </button>
 
-              <button className="rounded-xl py-6 bg-gray-50 hover:bg-gray-100 text-sm flex flex-col items-center">
+              <button
+                onClick={() => handleAction("Video")}
+                className="rounded-xl py-6 bg-gray-50 hover:bg-gray-100 text-sm flex flex-col items-center"
+              >
                 <IoMdVideocam className="text-xl" />
                 <p className="mt-2">Video</p>
               </button>
