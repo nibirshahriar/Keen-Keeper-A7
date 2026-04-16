@@ -5,7 +5,7 @@ const Banner = () => {
     <div className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto text-center px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-          Friends to keep close in your life!!!
+          Friends to keep close in your life
         </h1>
 
         <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
