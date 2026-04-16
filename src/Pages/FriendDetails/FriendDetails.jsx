@@ -47,11 +47,11 @@ const FriendDetails = () => {
     ]);
 
     if (type === "Call") {
-      toast.success(`Call done with ${friend.name}`, {
+      toast.success(`Call  with ${friend.name}`, {
         position: "top-center",
       });
     } else if (type === "Text") {
-      toast.info(`Text sent to ${friend.name}`, {
+      toast.info(`Text with ${friend.name}`, {
         position: "top-center",
       });
     } else if (type === "Video") {
