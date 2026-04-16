@@ -8,7 +8,7 @@
     "status": "almost-due",
     "tags": ["WORK"],
     "bio": "Met in university. Love hiking together.",
-    "goal": 14,
+    "goal": 19,
     "next_due_date": "2025-07-20"
   },
   {
@@ -16,11 +16,11 @@
     "name": "Emma Wilson",
     "picture": "https://i.ibb.co/hSZxXGJ/A2.jpg",
     "email": "emma@example.com",
-    "days_since_contact": 6,
+    "days_since_contact": 22,
     "status": "overdue",
     "tags": ["FAMILY"],
     "bio": "Cousin. Very close since childhood.",
-    "goal": 10,
+    "goal": 18,
     "next_due_date": "2025-07-25"
   },
   {
@@ -32,7 +32,7 @@
     "status": "overdue",
     "tags": ["WORK"],
     "bio": "Office colleague. Loves design.",
-    "goal": 7,
+    "goal": 17,
     "next_due_date": "2025-07-15"
   },
   {
@@ -44,7 +44,7 @@
     "status": "overdue",
     "tags": ["HOBBY", "TRAVEL"],
     "bio": "Travel buddy and photographer.",
-    "goal": 10,
+    "goal": 16,
     "next_due_date": "2025-07-30"
   },
   {
@@ -52,7 +52,7 @@
     "name": "David Kim",
     "picture": "https://i.ibb.co/qMSkkC9r/A5.jpg",
     "email": "david@example.com",
-    "days_since_contact": 62,
+    "days_since_contact": 19,
     "status": "overdue",
     "tags": ["WORK"],
     "bio": "Old colleague. Haven’t talked in a while.",
@@ -76,11 +76,11 @@
     "name": "Lisa Nakamura",
     "picture": "https://i.ibb.co/LX7dHY4j/A7.jpg",
     "email": "lisa2@example.com",
-    "days_since_contact": 62,
+    "days_since_contact": 28,
     "status": "on-track",
     "tags": ["WORK"],
     "bio": "Designer friend.",
-    "goal": 10,
+    "goal": 14,
     "next_due_date": "2025-07-18"
   },
   {
@@ -88,7 +88,7 @@
     "name": "James Wright",
     "picture": "https://i.ibb.co/nMX55kk8/A8.jpg",
     "email": "james2@example.com",
-    "days_since_contact": 62,
+    "days_since_contact": 40,
     "status": "almost-due",
     "tags": ["HOBBY", "TRAVEL"],
     "bio": "Adventure partner.",
@@ -100,11 +100,11 @@
     "name": "David Kim",
     "picture": "https://i.ibb.co/wFFb4bY2/A9.jpg",
     "email": "david2@example.com",
-    "days_since_contact": 62,
+    "days_since_contact": 45,
     "status": "almost-due",
     "tags": ["WORK"],
     "bio": "Startup friend.",
-    "goal": 12,
+    "goal": 32,
     "next_due_date": "2025-07-12"
   },
   {
@@ -116,7 +116,7 @@
     "status": "overdue",
     "tags": ["FAMILY"],
     "bio": "Family connection.",
-    "goal": 10,
+    "goal": 50,
     "next_due_date": "2025-07-26"
   },
   {
@@ -128,7 +128,7 @@
     "status": "overdue",
     "tags": ["WORK"],
     "bio": "Creative designer.",
-    "goal": 10,
+    "goal": 22,
     "next_due_date": "2025-07-14"
   },
   {
@@ -140,7 +140,7 @@
     "status": "on-track",
     "tags": ["HOBBY", "TRAVEL"],
     "bio": "Explorer and traveler.",
-    "goal": 10,
+    "goal": 14,
     "next_due_date": "2025-07-29"
   }
 ]

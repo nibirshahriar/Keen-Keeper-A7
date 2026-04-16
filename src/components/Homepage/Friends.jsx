@@ -12,7 +12,7 @@ const Friends = () => {
         <h2 className="text-2xl font-bold mb-6">Your Friends</h2>
 
         {loading ? (
-          <div className="flex justify-center items-center h-[60vh]">
+          <div className="flex justify-center items-center h-[40vh]">
             <HashLoader color="#ad46ff" />
           </div>
         ) : (
