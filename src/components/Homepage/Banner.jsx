@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <div className="py-16 bg-gray-50">
-      <div className="container mx-auto text-center px-4">
+      <div className="max-w-6xl mx-auto text-center px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
           Friends to keep close in your life
         </h1>
